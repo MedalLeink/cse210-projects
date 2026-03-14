@@ -4,7 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Call each function in order
         DisplayWelcome();
         string userName = PromptUserName();
         int favoriteNumber = PromptUserNumber();
@@ -12,13 +11,11 @@ class Program
         DisplayResult(userName, squaredNumber);
     }
 
-    // Function 1: Display a welcome message
     static void DisplayWelcome()
     {
         Console.WriteLine("I welcome you to this program!");
     }
 
-    // Function 2: Ask for the user's name
     static string PromptUserName()
     {
         Console.Write("Kindly enter your name: ");
@@ -26,7 +23,6 @@ class Program
         return name;
     }
 
-    // Function 3: Ask for the user's favorite number
     static int PromptUserNumber()
     {
         Console.Write("Kindly enter your favorite number: ");
@@ -35,13 +31,11 @@ class Program
         return number;
     }
 
-    // Function 4: Square the number
     static int SquareNumber(int number)
     {
         return number * number;
     }
 
-    // Function 5: Display the result
     static void DisplayResult(string name, int squaredNumber)
     {
         Console.WriteLine($"{name}, the square of your number is {squaredNumber}");
